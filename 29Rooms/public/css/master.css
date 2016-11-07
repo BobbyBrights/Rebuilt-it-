@@ -1,0 +1,132 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+  header + navbar
+**/
+nav {
+  display: none;
+  position: fixed;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 100%;
+}
+nav .inner_nav {
+  height: 50px;
+  padding: 5px 14px;
+  display: block;
+}
+nav .inner_nav .logo_container {
+  display: inline-block;
+  float: left;
+}
+nav .inner_nav .logo_container img {
+  width: 42px;
+  height: 42px;
+}
+nav .inner_nav .navbar {
+  display: inline-block;
+  float: left;
+}
+nav .inner_nav .navbar #menu li {
+  display: inline;
+  list-style: none;
+  line-height: 32px;
+}
+nav .inner_nav .navbar #menu li a {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-decoration: none;
+}
+nav .inner_nav .navbar #menu li a:hover {
+  color: #e74d50;
+}
+nav .inner_nav .navbar .social:hover {
+  color: #e74d50;
+}
+
+#intro, #experiences, #artistes, #partner {
+  height: 100%;
+}
+
+.container .inner_container {
+  margin: 0 auto;
+  display: table;
+  width: 85%;
+}
+
+.block_logo {
+  display: table;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.block_logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.block_title {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 160px;
+}
+.block_title .rooms {
+  background-image: url("../asset/images/29rooms-logo.png");
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 119px;
+}
+
+.block_playIt {
+  display: table;
+  margin: 0 auto;
+}
+.block_playIt .illustration {
+  text-align: center;
+}
+.block_playIt .illustration img {
+  width: 70px;
+  height: 70px;
+}
+.block_playIt .content span {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 27px;
+  font-size: 12px;
+}
+
+.next {
+  display: table;
+  margin: 0 auto;
+}
+.next img {
+  width: 30px;
+}
+
+#experiences {
+  background-image: url("../asset/images/space-bg.png");
+  color: white;
+}
+
+/*# sourceMappingURL=master.css.map */

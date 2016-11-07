@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAS;EACP,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,IAAI;;;AAEd,oBAAoB;EAClB,UAAU,EAAE,UAAU;;;AAExB,sBAAiB;EACf,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;;AAEZ,SAAO;EACL,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC",
+"sources": ["../../views/sass/reset.scss"],
+"names": [],
+"file": "reset.css"
+}
