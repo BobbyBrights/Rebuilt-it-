@@ -1,8 +1,24 @@
 @import "reset.scss";
 $primary-color : #000000;
 $secondary-color : #FFFFFF;
-$hover_text : #e74d50;
+$violet: #a24694;
+$sun: #d3da2b;
+$blue_ice: #8c8faf;
+$turquoise: #00807d;
+$hell: #e94c4c;
+$cream: #f2dfbb;
+$hell1 : #e74d50;
 
+/*Source Image*/
+.p1{background-image: url('../asset/images/1.jpg');}
+.p2{background-image: url('../asset/images/2.jpg');}
+.p3{background-image: url('../asset/images/3.jpg');}
+.p4{background-image: url('../asset/images/4.jpg');}
+.p5{background-image: url('../asset/images/5.jpg');}
+.p6{background-image: url('../asset/images/6.jpg');}
+.p7{background-image: url('../asset/images/7.jpg');}
+.p8{background-image: url('../asset/images/8.jpg');}
+.p9{background-image: url('../asset/images/9.jpg');}
 
 
 /*
@@ -40,14 +56,14 @@ nav{
             font-size: 10px;
             text-decoration: none;
             &:hover{
-              color: $hover_text;
+              color: $hell1;
             }
           }
         }
       }
       .social{
         &:hover{
-          color: $hover_text;
+          color: $hell1;
         }
       }
     }
@@ -56,12 +72,14 @@ nav{
 #intro, #experiences, #artistes, #partner{
   height: 100%
 }
-.container{
-  .inner_container{
-    margin: 0 auto;
-    display: table;
-    width: 85%;
-    .block_content{
+#intro{
+  .container{
+    .inner_container{
+      margin: 0 auto;
+      display: table;
+      width: 85%;
+      .block_content{
+      }
     }
   }
 }
@@ -86,10 +104,11 @@ nav{
   }
   .rooms{
     background-image: url("../asset/images/29rooms-logo.png");
-    background-size: contain;
-    width: 100%;
     background-repeat: no-repeat;
-    height: 119px;
+    background-position: center;
+    background-size: contain;
+    width: auto;
+    height: 200px;
   }
 }
 .block_playIt{
@@ -120,7 +139,183 @@ nav{
   }
 }
 /////experiences
+///////
+
+#experiences_true{
+  .block_title_exp{
+    h1{
+      font-size: 20px;
+    }
+  }
+  .last_project{
+    //width: 80%;
+    .preview{
+      height: 540px;
+      width: 100%;
+      background-image: url('../asset/images/virtual-screen.jpg');
+      background-size: contain;
+    }
+  }
+}
+///////
 #experiences{
-  background-image: url('../asset/images/space-bg.png');
+  padding-top: 1px;
   color: white;
+  .space{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../asset/images/space-bg.png');
+    animation-name: space;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: normal;
+  }
+  .container{
+    padding-top: 36px;
+  }
+  .inner_container{
+  //  margin-top: 36px;
+    position: relative;
+    height: 100%;
+  }
+}
+@keyframes space {
+  to{
+    background-position-x: -1279px;
+  }
+  from{
+    background-position-x: 0px;
+  }
+}
+.top_block{
+  width: 100%;
+  height: 50px;
+  display: block;
+  font-size: 15px;
+  line-height: 50px;
+  margin-bottom: 74px;;
+  .lt{
+    span{
+      color: $hell;
+    }
+  }
+  rt{
+    span{
+      color:$violet;
+    }
+  }
+  &:before,:after{
+    content:'';
+    display: table;
+    clear: both;
+  }
+  &:after{
+    content:'';
+  }
+
+}
+
+.middle_block{
+  width: 90%;
+  padding: 20px;
+  h4{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: $cream;
+  }
+  h1{
+    color: $cream;
+    letter-spacing: 5px;
+    font-size: 43px;
+  }
+  p{
+    font-size: 17px;
+    margin: 20px;
+    padding: 10px;
+    color: $cream;
+  }
+  span{
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: $hell1;
+  }
+}
+
+.bottom_block{
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 36px;
+  .lb{
+    span{
+      color: $blue_ice;
+    }
+  }
+  .rb{
+    span{
+      color: $turquoise;
+    }
+  }
+}
+
+///
+.itemIllustration{
+  .block_illus{
+    .pic{
+    }
+    .link{
+      .blleft{
+        a{
+
+        }
+      }
+    }
+      .blright{
+        span{
+
+        }
+      }
+  }
+  .block_desc{
+    span{
+
+    }
+  }
+}
+
+.upp{
+  text-transform: uppercase;
+}
+.left{
+  display: inline-block;
+  float: left;
+}
+.right{
+  display: inline;
+  float: right;
+}
+.container{
+
+}
+.center_block{
+  margin: 0 auto;
+}
+.center_text{
+  text-align: center;
+}
+.inner_container{
+  min-width: 720px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }

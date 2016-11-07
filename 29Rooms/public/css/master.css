@@ -18,6 +18,47 @@ ul, ol, p {
   margin: 0;
 }
 
+span {
+  display: block;
+}
+
+/*Source Image*/
+.p1 {
+  background-image: url("../asset/images/1.jpg");
+}
+
+.p2 {
+  background-image: url("../asset/images/2.jpg");
+}
+
+.p3 {
+  background-image: url("../asset/images/3.jpg");
+}
+
+.p4 {
+  background-image: url("../asset/images/4.jpg");
+}
+
+.p5 {
+  background-image: url("../asset/images/5.jpg");
+}
+
+.p6 {
+  background-image: url("../asset/images/6.jpg");
+}
+
+.p7 {
+  background-image: url("../asset/images/7.jpg");
+}
+
+.p8 {
+  background-image: url("../asset/images/8.jpg");
+}
+
+.p9 {
+  background-image: url("../asset/images/9.jpg");
+}
+
 /*
   header + navbar
 **/
@@ -66,7 +107,7 @@ nav .inner_nav .navbar .social:hover {
   height: 100%;
 }
 
-.container .inner_container {
+#intro .container .inner_container {
   margin: 0 auto;
   display: table;
   width: 85%;
@@ -91,10 +132,11 @@ nav .inner_nav .navbar .social:hover {
 }
 .block_title .rooms {
   background-image: url("../asset/images/29rooms-logo.png");
-  background-size: contain;
-  width: 100%;
   background-repeat: no-repeat;
-  height: 119px;
+  background-position: center;
+  background-size: contain;
+  width: auto;
+  height: 200px;
 }
 
 .block_playIt {
@@ -124,9 +166,144 @@ nav .inner_nav .navbar .social:hover {
   width: 30px;
 }
 
+#experiences_true .block_title_exp h1 {
+  font-size: 20px;
+}
+#experiences_true .last_project .preview {
+  height: 540px;
+  width: 100%;
+  background-image: url("../asset/images/virtual-screen.jpg");
+  background-size: contain;
+}
+
 #experiences {
-  background-image: url("../asset/images/space-bg.png");
+  padding-top: 1px;
   color: white;
+}
+#experiences .space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background-image: url("../asset/images/space-bg.png");
+  animation-name: space;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+#experiences .container {
+  padding-top: 36px;
+}
+#experiences .inner_container {
+  position: relative;
+  height: 100%;
+}
+
+@keyframes space {
+  to {
+    background-position-x: -1279px;
+  }
+  from {
+    background-position-x: 0px;
+  }
+}
+.top_block {
+  width: 100%;
+  height: 50px;
+  display: block;
+  font-size: 15px;
+  line-height: 50px;
+  margin-bottom: 74px;
+}
+.top_block .lt span {
+  color: #e94c4c;
+}
+.top_block rt span {
+  color: #a24694;
+}
+.top_block:before, .top_block :after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.top_block:after {
+  content: '';
+}
+
+.middle_block {
+  width: 90%;
+  padding: 20px;
+}
+.middle_block h4 {
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #f2dfbb;
+}
+.middle_block h1 {
+  color: #f2dfbb;
+  letter-spacing: 5px;
+  font-size: 43px;
+}
+.middle_block p {
+  font-size: 17px;
+  margin: 20px;
+  padding: 10px;
+  color: #f2dfbb;
+}
+.middle_block span {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: #e74d50;
+}
+
+.bottom_block {
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 36px;
+}
+.bottom_block .lb span {
+  color: #8c8faf;
+}
+.bottom_block .rb span {
+  color: #00807d;
+}
+
+.upp {
+  text-transform: uppercase;
+}
+
+.left {
+  display: inline-block;
+  float: left;
+}
+
+.right {
+  display: inline;
+  float: right;
+}
+
+.center_block {
+  margin: 0 auto;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.inner_container {
+  min-width: 720px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=master.css.map */
