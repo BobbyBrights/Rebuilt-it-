@@ -22,6 +22,53 @@ span {
   display: block;
 }
 
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Brown-thin';
+  src: url("../../public/font/Brown-Thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Light.otf");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Thin-Italic.otf");
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Regular-Italic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Bold-Italic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brown';
+  src: url("../../public/font/Brown-Light-Italic.otf");
+  font-weight: 200;
+  font-style: italic;
+}
 /*Source Image*/
 .p1 {
   background-image: url("../asset/images/1.jpg");
