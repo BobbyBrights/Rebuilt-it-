@@ -1,9 +1,2 @@
-    Lady Gaga's Born This Way Foundation
-    Tinashe
-    Rupaul
-    Adwoa Aboah
-    Nicola Formichetti
-    Abbi Jacobson
-    Tilt Brush by Google
-    Adrian Grenier + Lonely Whale Foundation
-   Brooklyn Balloon Company Art Hoe Collective Kate Moross Baron Von Fancy Killer Films Media Daniel Rozin Phhhoto Radiant Human Charlotte Simone Ryan Burke Chez Conversations Sight Unseen x Bower Flavor Paper Signe Pierce Eloise Corr Danch The New Stand Oddfellows Mischa G 
+
+["Lady Gaga's Born This Way Foundation","Tinashe,Rupaul","Adwoa Aboah","Nicola Formichetti","Abbi Jacobson","Tilt Brush by Google","Adrian Grenier + Lonely Whale Foundation","Brooklyn Balloon Company","Art Hoe Collective","Kate Moross","Baron Von Fancy","Killer Films Media","Daniel Rozin","Phhhoto","Radiant Human","Charlotte Simone","Ryan Burke","Chez Conversations","Sight Unseen x Bower","Flavor Paper","Signe Pierce","Eloise Corr Danch","The New Stand","Oddfellows","Mischa G"]

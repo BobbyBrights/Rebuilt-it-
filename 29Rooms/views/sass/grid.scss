@@ -1,0 +1,70 @@
+$colMax: 12;
+//#col-*
+@for $i from 1 through $colMax {
+    .col-#{$i}{
+        width: percentage($i)/$colMax;
+        float: left;
+        padding: 0 15px;
+    }
+}
+  // col-offset-*
+
+@for $j from 1 through $colMax{
+    .col-offset-#{$j}{
+        margin-left: percentage($j)/$colMax;
+    }
+}
+
+  // Container Fluid
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:before,&:after{
+        display: table;
+        margin: 15px;
+    }
+    &:after{
+        clear: both;
+    }
+}
+
+  // Row
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  &:before,&:after{
+      display: table;
+      content:'';
+  }
+  &:after{
+      clear: both;
+  }
+}
+
+  // Center Block
+
+.center-block{
+    margin: 0 auto;
+}
+
+
+  // Center-Text
+
+
+.center-text{
+    text-align: center;
+}
+
+.shield{
+    width: 1200px;
+    padding:{
+        top: 75px;
+        bottom: 90px;
+    }
+    margin: 0 auto;
+}

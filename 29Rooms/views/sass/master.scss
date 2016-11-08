@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "font.scss";
+@import "grid.scss";
 $primary-color : #000000;
 $secondary-color : #FFFFFF;
 $violet: #a24694;
@@ -143,23 +144,36 @@ nav{
 ///////
 
 #experiences_true{
+  padding-top:1px;
+  background-color: #F6ECDB;
+  .inner_container{
+      width: 73.5%;
+  }
   .block_title_exp{
     h1{
+      text-transform: uppercase;
+      margin: 74px 0;
       font-size: 20px;
+      letter-spacing: 0.4em;
+
     }
   }
   .last_project{
     //width: 80%;
+    margin-bottom: 35px;
     .preview{
       height: 540px;
       width: 100%;
       background-image: url('../asset/images/virtual-screen.jpg');
       background-size: contain;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
   }
 }
 ///////
 #experiences{
+
   padding-top: 1px;
   color: white;
   .space{
@@ -315,8 +329,283 @@ nav{
   text-align: center;
 }
 .inner_container{
-  min-width: 720px;
+  //min-width: 720px;
   width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+//section
+#artiste, #partner{
+  height: auto;
+  background-image: url('../asset/images/space-bg.png');
+  animation-name: space;
+  animation-name: space;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  .inner_container{
+    width: 100%;
+    font-family: 'Brown';
+    font-size: 26px;
+    text-transform: uppercase;
+    .block{
+      h1{
+        font-size: 20px;
+        // font-family:'Brown';
+        color: $cream;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.4em;
+      }
+    }
+    .list{
+      .listartiste{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        li{
+          vertical-align: middle;
+          width: 49%;
+          line-height: 1.8em;
+          text-align: center;
+          padding: 30px 10px;
+          list-style: none;
+          display: inline-block;
+          &:nth-child(1){
+            color: $blue_ice;
+          }
+          &:nth-child(3n+2){
+            color: $hell;
+          }
+          &:nth-child(3n+4){
+            color: $blue_ice;
+          }
+          &:nth-child(3n+3){
+            color: $violet;
+          }
+          a{
+            font-weight: normal;
+            color: inherit;
+            letter-spacing: 0.2em;
+
+            span{
+              border-bottom: 1px solid inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pt{
+  position: relative;
+  padding-top: 120px;
+  &:before{
+    content:'';
+    background-image: url('../asset/images/girl-1.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    width: 400px;
+    height: 435px;
+  }
+  .block{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    h1{
+      margin: 20px 0;
+    }
+  }
+}
+#partner{
+  padding: 60px 10px;
+  position: relative;
+  &:before{
+    content:'';
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    background-image:url('../asset/images/hand-purple-l.png');
+    height: 354px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .inner_container{
+    border-bottom: 1px solid $cream;
+    width: 94%;
+    text-align: center;
+    h1{
+      color: $cream;
+      font-size: 20px;
+      letter-spacing: 8px;
+      margin: 40px 0;
+    }
+    .partner_block{
+      width: 100%;
+      display: block;
+      li{
+        display: inline-block;
+        text-align: center;
+        width: 16%;
+        &:last-child{
+          width: 25%;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.p{
+  padding-bottom: 1;
+}
+footer{
+  .container{
+    position: relative;
+    .inner_container{
+      border: none!important;
+      padding-top: 24px;
+      color: $cream;
+      text-transform:uppercase;
+      .title{
+        p{
+          font-weight: bold;
+          letter-spacing: 0.4em;
+          font-size: 20px;
+          padding: 15px;
+        }
+      }
+      .end_block{
+        .social_block{
+          margin-bottom: 15px;
+          margin-bottom: 10px;
+          i{
+            //font-size: 14px;
+            padding: 10px;
+          }
+        }
+        img{
+          width: 60px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+.girl{
+  position: absolute;
+  width: 471px;
+  height: 346px;
+  background-repeat: no-repeat;
+  bottom: -59px;
+  right: -10px;
+  background-image: url('../asset/images/girl-3.png');
+}
+#experiences_true{
+  .container{
+    position:relative;
+    &:after{
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 100% 100%;
+      bottom: -100px;
+      right: -2px;
+      background-image: url('../asset/images/divider-beige.png');
+    }
+  }
+}
+
+
+
+.itemText{
+  position: relative;
+  margin: 15px 0px;
+  color: $cream;
+  .block{
+    padding: 20px;
+    background-color: $violet;
+    p{
+      margin: 30px 0;
+      font-size: 18px;
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      line-height: 1.4em;
+    }
+    .author{
+      span{
+        text-align: right;
+        line-height: 1.4em;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        font-weight: 200;
+      }
+    }
+    .categorie{
+      span{
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+        text-decoration: underline;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.itemIllustration{
+  position: relative;
+  font-weight: 200;
+  margin: 15px 0px;
+  color: $cream;
+  .block{
+    background-color: $hell;
+    //padding: 20px;
+    .block_illus{
+      display: block;
+      padding: 10px;
+      width: 100%;
+      height: auto;
+      //display: block;
+      img{
+        height: auto;
+        width: 100%;
+      }
+      .link{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+        display: block;
+        .blright,.blleft{
+          width: 49%;
+          padding: 10px 20px 20px 20px;
+          display: inline-block;
+          a{
+            color:inherit;
+          }
+          //float: left;
+        }
+
+      }
+    }
+    .block_desc{
+      border-top: 2px solid;
+      padding: 20px;
+      span{
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+      }
+    }
+  }
 }
