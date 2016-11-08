@@ -26,7 +26,9 @@ $hell1 : #e74d50;
 /*
   header + navbar
 **/
-
+#wrappers{
+  overflow-x: hidden;
+}
 nav{
   display: none;
   position: fixed;

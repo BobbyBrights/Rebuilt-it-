@@ -271,6 +271,10 @@ span {
 /*
   header + navbar
 **/
+#wrappers {
+  overflow-x: hidden;
+}
+
 nav {
   display: none;
   position: fixed;
