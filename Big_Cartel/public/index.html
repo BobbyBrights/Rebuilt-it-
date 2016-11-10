@@ -7,67 +7,74 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/vide/dist/jquery.vide.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
     <link href="css/master.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <div id="page">
       <header>
         <div class="row">
-          <div class="inner col-8 col-offset-2">
+          <div class="inner col-10 col-offset-1">
             <nav>
               <div class="logo_nav"></div>
-              <!--.navbar
-              ul#menulink
-                li: a(href='#') Tour
-                li: a(href='#') Examples
-                li: a(href='#') Pricing & Sign Up
-              
-              ul#assitance
-                li: a(href='#') Login
-                li: a(href='#') Help
-                li: a(href='#') Blog
-              -->
+              <div class="navbar">
+                <ul id="menulink">
+                  <li><a href="#tour">Tour</a></li>
+                  <li><a href="#">Examples</a></li>
+                  <li><a href="#">Pricing & Sign Up</a></li>
+                </ul>
+                <ul id="assitance">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
       </header>
       <div class="container_intro">
         <div class="row">
-          <div class="content_intro col-8 col-offset-2">
-            <div class="font">
-              <div class="slogan we-believe"></div>
-            </div>
-            <p>Join nearly a million makers, designers, musicians, and other artists using Big Cartel to build a unique online store and run a creative business.</p>
-            <div class="play">
-              <svg class="play-button play-button-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                <path fill="#FFFFFF" d="M25,2c12.7,0,23,10.3,23,23S37.7,48,25,48S2,37.7,2,25S12.3,2,25,2 M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0L25,0z"></path>
-                <path fill="#FFFFFF" d="M21,33c-0.2,0-0.3,0-0.5-0.1C20.2,32.7,20,32.4,20,32V18c0-0.4,0.2-0.7,0.5-0.9s0.7-0.2,1,0l12,7c0.3,0.2,0.5,0.5,0.5,0.9s-0.2,0.7-0.5,0.9l-12,7C21.3,33,21.2,33,21,33z M22,19.7v10.5l9-5.3L22,19.7z"></path>
-              </svg>
-              <!--svg(class="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54")
-              path(fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M27.1,3c-13.3,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24c0-10.5-6.7-19.4-16.1-22.7")
-              
-              -->
+          <div class="content_intro col-10 col-offset-1">
+            <div class="screen">
+              <div class="font">
+                <div class="slogan we-believe"></div>
+              </div>
+              <p>Join nearly a million makers, designers, musicians, and other artists using Big Cartel to build a unique online store and run a creative business.</p>
+              <div class="play">
+                <svg class="play-button play-button-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                  <path fill="#FFFFFF" d="M25,2c12.7,0,23,10.3,23,23S37.7,48,25,48S2,37.7,2,25S12.3,2,25,2 M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0L25,0z"></path>
+                  <path fill="#FFFFFF" d="M21,33c-0.2,0-0.3,0-0.5-0.1C20.2,32.7,20,32.4,20,32V18c0-0.4,0.2-0.7,0.5-0.9s0.7-0.2,1,0l12,7c0.3,0.2,0.5,0.5,0.5,0.9s-0.2,0.7-0.5,0.9l-12,7C21.3,33,21.2,33,21,33z M22,19.7v10.5l9-5.3L22,19.7z"></path>
+                </svg>
+                <!--svg(class="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54")
+                path(fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M27.1,3c-13.3,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24c0-10.5-6.7-19.4-16.1-22.7")
+                
+                -->
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container_tour">
+      <div class="container_tour" id="tour">
         <div class="row">
-          <div class="tour part1 col-8 col-offset-2">
-            <div class="content">
-              <h2>Built for makers</h2>
-              <p>For over a decade, creative people from around the world have used Big Cartel’s simple tools and resources to build a unique online store, manage and sell their work, delight their fans and customers, and run their business their own way.</p>
-              <div class="picture">
-                <div class="block_img a"></div>
-                <div class="source"><span>site:<a href="#">melanie arbantes</a></span></div>
+          <div class="tour part1 col-10 col-offset-1">
+            <div class="screen">
+              <div class="content">
+                <div class="tab"><span>tour</span></div>
+                <h2>Built for makers</h2>
+                <p>For over a decade, creative people from around the world have used Big Cartel’s simple tools and resources to build a unique online store, manage and sell their work, delight their fans and customers, and run their business their own way.</p>
+                <div class="picture">
+                  <div class="block_img a"></div>
+                  <div class="source"><span>site:<a href="#">melanie arbantes</a></span></div>
+                </div>
               </div>
-            </div>
-            <div class="content">
-              <h2>Get down to business</h2>
-              <p>We get it, you’re busy – so we keep it simple. We provide just the right mix of real-time stats, search engine optimization, order management, and promotional tools to get a small shop up and running with as little stress as possible.</p>
-              <div class="picture">
-                <div class="block_img b"></div>
-                <div class="source"><span>site:<a href="#">Swinj</a></span></div>
+              <div class="content">
+                <h2>Get down to business</h2>
+                <p>We get it, you’re busy – so we keep it simple. We provide just the right mix of real-time stats, search engine optimization, order management, and promotional tools to get a small shop up and running with as little stress as possible.</p>
+                <div class="picture">
+                  <div class="block_img b"></div>
+                  <div class="source"><span>site:<a href="#">Swinj</a></span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -80,48 +87,50 @@
           </div>
         </div>
         <div class="row">
-          <div class="tour part2 col-8 col-offset-2">
-            <div class="content">
-              <h2>Get down to business</h2>
-              <p>We get it, you’re busy – so we keep it simple. We provide just the right mix of real-time stats, search engine optimization, order management, and promotional tools to get a small shop up and running with as little stress as possible.</p>
-              <div class="picture">
-                <div class="block_img b"></div>
-                <div class="source"><span>site:<a href="#">fuzzco</a></span></div>
+          <div class="tour part2 col-10 col-offset-1">
+            <div class="screen">
+              <div class="content">
+                <h2>Get down to business</h2>
+                <p>We get it, you’re busy – so we keep it simple. We provide just the right mix of real-time stats, search engine optimization, order management, and promotional tools to get a small shop up and running with as little stress as possible.</p>
+                <div class="picture">
+                  <div class="block_img c"></div>
+                  <div class="source"><span>site:<a href="#">fuzzco</a></span></div>
+                </div>
               </div>
-            </div>
-            <div class="content">
-              <h2>Your shop, anywhere</h2>
-              <p>Hit the road and take your shop with you. Our mobile-friendly site makes it easy to manage your shop from any phone or tablet, and our app for iPhone and iPad goes a step further to handle in-person sales at craft fairs, concerts, and other live events.</p>
-              <div class="picture">
-                <div class="block_img b"></div>
-                <div class="source"><span>site:<a href="#">annie davidson</a></span></div>
+              <div class="content">
+                <h2>Your shop, anywhere</h2>
+                <p>Hit the road and take your shop with you. Our mobile-friendly site makes it easy to manage your shop from any phone or tablet, and our app for iPhone and iPad goes a step further to handle in-person sales at craft fairs, concerts, and other live events.</p>
+                <div class="picture">
+                  <div class="block_img d"></div>
+                  <div class="source"><span>site:<a href="#">annie davidson</a></span></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="module_image painter">
           <div class="inner_container">
-            <button href="#">open your shop</button>
+            <button href="#">Open your shop</button>
           </div>
           <footer class="row">
-            <div class="col-8 col-offset-2">
-              <div class="block_logo_footer">
-                <ima></ima>
-              </div>
-              <div class="navbar_footer">
-                <ul id="menulink">
-                  <li><a href="#">Tour</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Pricing & Sign Up</a></li>
-                </ul>
-                <ul id="assitance">
-                  <li><a href="#">Login</a></li>
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-                <div class="mention">
-                  <div class="copyright"><span>© 2016 Big Cartel, LLC</span></div>
-                  <div class="mention_legal"><span><a href="#">Legal</a></span></div>
+            <div class="col-10 col-offset-1 center-footer">
+              <div class="screen bfooter">
+                <div class="block_logo_footer col-6"><img src="asset/images/brand.svg"/></div>
+                <div class="navbar_footer col-6">
+                  <ul id="menulink">
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Sing Up</a></li>
+                    <li><a href="#">Log In</a></li>
+                  </ul>
+                  <ul id="assitance">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+                  <div class="mention">
+                    <div class="copyright"><span>© 2016 Big Cartel, LLC |</span></div>
+                    <div class="mention_legal"><span><a href="#">Legal</a></span></div>
+                  </div>
                 </div>
               </div>
             </div>
