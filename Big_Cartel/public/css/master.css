@@ -330,6 +330,10 @@ nav .navbar ul:nth-child(2) {
   cursor: pointer;
 }
 
+.navbar a.active {
+  color: #FFF;
+}
+
 .logo_nav:hover ~ .navbar,
 .navbar:hover {
   transform: translateY(0);

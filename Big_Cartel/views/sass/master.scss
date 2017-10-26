@@ -101,6 +101,9 @@ nav{
 .logo_nav{
   cursor: pointer;
 }
+.navbar a.active{
+  color: $white
+}
 .logo_nav:hover~.navbar,
 .navbar:hover{
   transform: translateY(0);
