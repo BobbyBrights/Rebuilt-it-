@@ -8,7 +8,7 @@ html
     //script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='../bower_components/vide/dist/jquery.vide.min.js')
     script(src='js/script.js')
-    script(src='js/scroll.js')
+    //script(src='js/scroll.js')
     link( href='css/master.css' rel='stylesheet' type='text/css')
 
   body
@@ -17,15 +17,14 @@ html
         .row
           .inner.col-10.col-offset-1
             nav
-              .logo_nav
+              .logo_nav(data-blockfixed='false')
                 //- ici svg
               .navbar
-                ul#menulink.k
+                ul
                   li: a(href='#tour') Tour
                   li: a(href='#test') Examples
                   li: a(href='#re') Pricing & Sign Up
-
-                ul#assitance
+                ul
                   li: a(href='#') Login
                   li: a(href='#') Help
                   li: a(href='#') Blog
