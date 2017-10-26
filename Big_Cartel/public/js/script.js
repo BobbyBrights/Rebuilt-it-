@@ -6,7 +6,13 @@ $(window).ready(function(){
   * Chargement de la vidéo
   **/
 
-  $('.container_intro').vide('asset/video/1.mp4');
+const opt = {
+  posterType: 'none',
+  loop: true,
+  resizing: true,
+}
+
+  $('.container_intro').vide('asset/video/1.mp4', opt);
 
 
   /**
