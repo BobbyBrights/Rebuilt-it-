@@ -326,6 +326,10 @@ nav .navbar ul:nth-child(2) {
   padding-right: 20px;
 }
 
+.logo_nav {
+  cursor: pointer;
+}
+
 .logo_nav:hover ~ .navbar,
 .navbar:hover {
   transform: translateY(0);

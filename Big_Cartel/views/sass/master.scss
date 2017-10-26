@@ -98,7 +98,9 @@ nav{
     }
   }
 }
-
+.logo_nav{
+  cursor: pointer;
+}
 .logo_nav:hover~.navbar,
 .navbar:hover{
   transform: translateY(0);
